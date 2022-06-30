@@ -28,6 +28,8 @@ jobs:
 
       - name: Build and Push
         uses: docker/build-push-action@v3
+        env:
+          GITHUBRUNNER : $GITHUB_RUNNER_NUMBER
         with:
           push: true
-          tags: coderandy007/httpapp:latest
+          tags: nishanthkp/httpapp:${{ env.GITHUBRUNNER }}
