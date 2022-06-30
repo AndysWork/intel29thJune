@@ -32,4 +32,4 @@ jobs:
           GITHUBRUNNER : $GITHUB_RUNNER_NUMBER
         with:
           push: true
-          tags: nishanthkp/httpapp:${{ env.GITHUBRUNNER }}
+          tags: coderandy007/httpapp:${{ env.GITHUBRUNNER }}
